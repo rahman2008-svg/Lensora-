@@ -1,0 +1,6 @@
+{
+  "name": "Lensora Studio",
+  "description": "Lensora Studio is an extremely powerful offline image editor inspired by Lightroom. It offers extensive adjustments, filters, stickers, text overlays, crops/rotations, frames, before/after compare, and export functions - all on-device and privacy-first.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
