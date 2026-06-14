@@ -1,0 +1,28 @@
+workflows:
+  android-release:
+    name: Android Release Build
+
+    environment:
+      java: 17
+
+    triggering:
+      events:
+        - push
+
+    scripts:
+      - name: Get dependencies
+        script: |
+          ./gradlew dependencies
+
+      - name: Build Debug APK
+        script: |
+          chmod +x gradlew
+          ./gradlew assembleDebug
+
+    artifacts:
+      - app/build/outputs/**/*.apk
+
+    publishing:
+      email:
+        recipients:
+          - your-email@example.com
